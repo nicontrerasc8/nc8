@@ -7,6 +7,9 @@
   font-family: 'Ubuntu', sans-serif;
   outline: none;
 }
+body{
+  overflow-x: hidden;
+}
 a{
   text-decoration: none;
 }
@@ -148,6 +151,7 @@ button{transition: 1s;}
 .grid article{
   background-color: var(--dark);
   box-shadow: 0 0 20px;
+  position: relative;
   border-radius: 20px;
   width: clamp(250px, 25%, 25%);
   transition: 1s;

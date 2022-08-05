@@ -1,6 +1,7 @@
 import { faCalculator, faCross, faFootball, faFootballBall, faHouse, faImage, faMeteor, faRocket, faUmbrellaBeach, faUtensils, faVolleyballBall, faWarehouse, faWineGlass } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+import { motion, useScroll } from "framer-motion"
 import React from 'react'
 
 const Data = [
@@ -68,7 +69,9 @@ const Projects = () => {
      <section className='grid'>
           {
                Data.length && Data.map((data, idx) => {
-                    return <article key={idx}
+                    return <motion.article 
+                         initial={{ opacity: 0, right: "100px" }}
+                         whileInView={{ opacity: 1, right: "0px" }} key={idx}
                          className={idx % 3 === 0 ? "yellow" :
                          (idx-1) % 3 === 0 ? "light-blue" :
                          "pink"      
@@ -82,7 +85,7 @@ const Projects = () => {
                                    Visitar
                               </button>
                          </a>
-                    </article>
+                    </motion.article>
                })
           }
      </section>

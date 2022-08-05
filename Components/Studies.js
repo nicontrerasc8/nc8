@@ -1,5 +1,6 @@
 import { faAtom, faCertificate, faCode, faComputer, faNewspaper } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {motion} from "framer-motion"
 import React from 'react'
 
 const Data = [
@@ -33,7 +34,11 @@ const Studies = () => {
   return <div className='page-section black-bg'>
      <h2>Certificaciones:</h2>
      <section className='grid'>
-          <article>
+          <motion.article
+               initial={{ opacity: 0, transform: "rotate(180deg)" }}
+               whileInView={{ opacity: 1, transform: "rotate(0)" }}
+               exit={{ opacity: 1, transform: "rotate(0)" }}
+          >
                <FontAwesomeIcon icon={faComputer}/>
                <h5 className='colored-text'>ReactJS</h5>
                <p>Curso de 8 semanas en la academia on-line Coderhouse sobre ReactJS, la principal librería de JavaScript a nivel mundial.</p>
@@ -42,16 +47,20 @@ const Studies = () => {
                                    Ver certificado
                               </button>
                          </a>
-          </article>
+          </motion.article>
      </section>
      <h2 style={{marginTop: "3rem"}}>Habilidades:</h2>
      <section className='grid'>
           {
                Data.length && Data.map((data,idx) => {
-                    return <article key={idx}>
+                    return <motion.article 
+                    initial={{ opacity: 0, }}
+                    whileInView={{ opacity: 1, }}
+
+                         key={idx}>
                          <img src={data.img}/>
                          <h5 className='colored-text'>{data.text}</h5>
-                    </article>
+                    </motion.article>
                })
           }
      </section>
