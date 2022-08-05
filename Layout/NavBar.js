@@ -6,14 +6,16 @@ import React from 'react'
 const NavBar = () => {
   return <>
      <nav>
+     <Link href={"/"}>
      <h2>NC</h2>
+     </Link>
           <div>
                <Link href={"/proyectos"}>
                     <button className='button nav-button yellow'>
                          Proyectos
                     </button>
                </Link>
-               <Link href={"/"}>
+               <Link href={"/estudios"}>
                     <button className='button nav-button light-blue'>
                          Estudios
                     </button>

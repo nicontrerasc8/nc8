@@ -61,11 +61,11 @@ const Data = [
 ]
 
 const Projects = () => {
-  return <div className='Projects'>
+  return <div className='page-section'>
      <h2>
           Mis proyectos:
      </h2>
-     <section className='proyect-grid'>
+     <section className='grid'>
           {
                Data.length && Data.map((data, idx) => {
                     return <article key={idx}
@@ -75,7 +75,7 @@ const Projects = () => {
                     }
                          >
                          <FontAwesomeIcon icon={data.icon}/>
-                         <h5 className='typewriter'>{data.name}</h5>
+                         <h5 className='colored-text'>{data.name}</h5>
                          <p>{data.description}</p>
                          <a href={data.link} target="_blank" rel="noreferrer">
                               <button className='button color'>
