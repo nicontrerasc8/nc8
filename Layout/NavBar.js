@@ -24,7 +24,7 @@ const NavBar = () => {
                          Estudios
                     </button>
                </Link>
-               <Link href={"/"}>
+               <Link href={"/curriculum"}>
                     <button className='button nav-button pink'>
                          Curriculum
                     </button>
@@ -48,7 +48,7 @@ const NavBar = () => {
                          Estudios
                     </button>
                </Link>
-               <Link href={"/"}>
+               <Link href={"/curriculum"}>
                     <button className='button nav-button pink'>
                          Curriculum
                     </button>
