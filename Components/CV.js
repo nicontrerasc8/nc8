@@ -1,6 +1,6 @@
 import { motion, useScroll } from "framer-motion"
 
-const Projects = () => {
+const CV = () => {
   return <div className='page-section'>
      <h2>
           Información personal:
@@ -21,4 +21,4 @@ const Projects = () => {
   </div>
 }
 
-export default Projects
+export default CV
