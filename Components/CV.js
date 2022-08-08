@@ -8,7 +8,7 @@ const CV = () => {
      <section className='grid'>
           <motion.article
             initial={{ opacity: 0, right: "100px" }}
-            whileInView={{ opacity: 1, right: "0px" }} key={idx}
+            whileInView={{ opacity: 1, right: "0px" }}
           >
                     <h5 className='colored-text'>Curriculum vitae</h5>
                          <a href={"https://firebasestorage.googleapis.com/v0/b/prochristo-b4aea.appspot.com/o/CV.pdf?alt=media&token=9143eb0a-79a1-4110-b3a7-75e79cbacaf7"} download="CV - Nicolás Contreras.pdf">
