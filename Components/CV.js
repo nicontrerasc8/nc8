@@ -11,7 +11,7 @@ const CV = () => {
             whileInView={{ opacity: 1, right: "0px" }} key={idx}
           >
                     <h5 className='colored-text'>Curriculum vitae</h5>
-                         <a href={data.link} target="_blank" rel="noreferrer">
+                         <a href={"https://firebasestorage.googleapis.com/v0/b/prochristo-b4aea.appspot.com/o/CV.pdf?alt=media&token=9143eb0a-79a1-4110-b3a7-75e79cbacaf7"} download="CV - Nicolás Contreras.pdf">
                               <button className='button color'>
                                    Descargar CV
                               </button>
