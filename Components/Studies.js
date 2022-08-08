@@ -1,4 +1,4 @@
-import { faAtom, faCertificate, faCode, faComputer, faNewspaper } from '@fortawesome/free-solid-svg-icons'
+import { faAtom, faCertificate, faCode, faComputer, faNewspaper, faSchool } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {motion} from "framer-motion"
 import React from 'react'
@@ -32,6 +32,19 @@ const Data = [
 
 const Studies = () => {
   return <div className='page-section black-bg'>
+     <h2>Estudios universitarios:</h2>
+     <section className='grid'>
+          <motion.article
+               initial={{ opacity: 0, right: "100px" }}
+               whileInView={{ opacity: 1, right: "0px" }}
+          >
+               <FontAwesomeIcon icon={faSchool}/>
+               <h5 className='colored-text'>UPC</h5>
+               <p>Carrera: Ing. de sistemas</p>
+               <p>Ciclo: 4to</p>
+               <p>Orden de mérito: décimo superior</p>
+          </motion.article>
+     </section>
      <h2>Certificaciones:</h2>
      <section className='grid'>
           <motion.article

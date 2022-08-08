@@ -29,6 +29,11 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-weight: 500;
 }
+p{
+  width: 100%;
+  margin: 2px 0;
+}
+
 nav{
   background-color: var(--dark);
   width: 100vw;
@@ -59,6 +64,58 @@ nav div{
   transition: 1s;
   gap: 10px;
 }
+nav .hamburger{
+     position: relative;
+     z-index: 7;
+     background-color: transparent;
+     padding: 5px;
+     height: 80px;
+     display: none;
+     cursor: pointer;
+  transition: all .5s ease-in-out;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+nav .hamburger span{
+     position: relative;
+     border-radius: 5px;
+     width: 55px;
+     transition: 500ms;
+     height: 6px;
+     background-color: var(--white);
+}
+nav.active .hamburger span{
+     background-color: var(--white);
+}
+.open-nav .hamburger-1{
+     transform: rotate(45deg);
+     top: 16px;
+}
+.open-nav .hamburger-2{
+     width: 0;
+}
+.open-nav .hamburger-3{
+     transform: rotate(-45deg);
+     bottom: 16px;
+}
+.btn-toggle-nav{
+     display: flex;
+     position: fixed;
+     width: 100%;
+     padding: 1rem 5vw;
+     top: 7rem;
+     background-color: var(--dark);
+     z-index: 9;
+     flex-direction: column;
+     gap: 10px;
+}
+.btn-toggle-nav button{
+     width: 100%;
+     font-size: calc(2vmax + 10px);
+}
+
 button{transition: 1s;}
 .button{
   cursor: pointer;
@@ -93,6 +150,10 @@ button{transition: 1s;}
 .button.pink:hover{
   background-color: var(--pink);
   color: var(--dark);
+}
+@media screen and (max-width: 850px) {
+  nav .nav-btns{display: none;}
+  nav .hamburger{display: flex;}
 }
 .home{
   display: flex;
@@ -135,6 +196,7 @@ button{transition: 1s;}
   justify-content: center;
 }
 .page-section h2{
+  text-align: center;
   font-size:clamp(35px, calc(3vmax + 2vmin), calc(3vmax + 2vmin));
 }
 .page-section.black-bg{

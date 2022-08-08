@@ -56,7 +56,7 @@ const Data = [
      {
           name: "Licorería Caná",
           description: "Web ecommerce para un negocio de venta de licores.",
-          link: "https://k-talogo.vercel.app/catalogo/licoreriascana",
+          link: "https://k-talogo.vercel.app/catalogo/licoreriacana",
           icon: faWineGlass
      },
 ]
