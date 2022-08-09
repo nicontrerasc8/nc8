@@ -8,7 +8,7 @@ import CV from "../Components/CV"
 const Home = () => {
 
   const {text} = useTypewriter({
-    words: [' hago páginas web chéveres.', ' soy programador frontend.', ' estudio ingeniería de sistemas.', ' me gusta la informática.'],
+    words: [' hago páginas web creativas.', ' soy programador frontend.', ' estudio ingeniería de sistemas.',],
     loop: Infinity,
     delaySpeed: 3000
   })
