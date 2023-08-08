@@ -1,4 +1,4 @@
-import { faCalculator, faCross, faFootball, faFootballBall, faHouse, faImage, faMeteor, faRocket, faUmbrellaBeach, faUtensils, faVolleyballBall, faWarehouse, faWineGlass } from '@fortawesome/free-solid-svg-icons'
+import { faBowlFood, faCalculator, faCross, faFish, faFootball, faFootballBall, faHelmetSafety, faHelmetUn, faHouse, faImage, faMeteor, faRocket, faTrowelBricks, faUmbrellaBeach, faUsersViewfinder, faUtensils, faVolleyballBall, faWarehouse, faWineGlass } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import { motion, useScroll } from "framer-motion"
@@ -24,16 +24,22 @@ const Data = [
           icon: faCross
      },
      {
+          name: "El pez nuestro de cada día",
+          description: "Página web hecha para un restaurante",
+          link: "https://elpeznuestrodecadadia.vercel.app/",
+          icon: faFish
+     },
+     {
           name: "Histogramic",
           description: "Single-page app (SPA) que transforma el contraste de imagenes.",
           link: "https://histogramas.vercel.app/",
           icon: faImage
      },
      {
-          name: "La Eskina del Yuka",
-          description: "Web ecommerce para una distribuidora de alimentos local.",
-          link: "https://k-talogo.vercel.app/catalogo/laeskinadelyuka",
-          icon: faUtensils
+          name: "Chambeando Perú",
+          description: "Sitio web para encontrar trabajadores en Lima.",
+          link: "https://chambeando.pe/",
+          icon: faUsersViewfinder
      },
      {
           name: "Bino-poiss",
@@ -52,12 +58,6 @@ const Data = [
           description: "Sitio oficial del equipo de waterpolo del Club Regatas Lima.",
           link: "https://team-waterpolo.netlify.app/",
           icon: faVolleyballBall
-     },
-     {
-          name: "Licorería Caná",
-          description: "Web ecommerce para un negocio de venta de licores.",
-          link: "https://k-talogo.vercel.app/catalogo/licoreriacana",
-          icon: faWineGlass
      },
 ]
 

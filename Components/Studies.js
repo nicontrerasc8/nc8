@@ -41,7 +41,7 @@ const Studies = () => {
                <FontAwesomeIcon icon={faSchool}/>
                <h5 className='colored-text'>UPC</h5>
                <p>Carrera: Ing. de sistemas</p>
-               <p>Ciclo: 4to</p>
+               <p>Ciclo: 6to</p>
                <p>Orden de mérito: décimo superior</p>
           </motion.article>
      </section>
